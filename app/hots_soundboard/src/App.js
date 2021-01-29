@@ -1,9 +1,14 @@
 import React from "react";
 import TabNav from "./TabNav"
 import ButtonGroup from "./ButtonGroup"
+import "./buttonCSS.css";
 
 class App extends React.Component {
-    state = { hero: "Tyrael", all_heros: ["Tyrael"]}
+    constructor() {
+        super();
+
+        this.state = { hero: "Tyrael", all_heros: ["Tyrael"] }//, context: new AudioContext()}
+    }
 
     render() {
         return (
