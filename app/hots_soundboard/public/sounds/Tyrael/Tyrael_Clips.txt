@@ -1,36 +1,36 @@
-001_greetings mortal.wav
-002_what do you need.wav
-003_I'm sorry did you say something I was busy thinking about Justice.wav
-004_be warned mortal you never know what your curiosity might unleash.wav
-005_you cannot even begin to imagine what you set in motion this day.wav
-006_just because I'm an immortal doesn't mean I want to wait around forever.wav
-007_if I got a face I'd be glaring at you right now.wav
-008_in heaven everything is fine.wav
-009_you can always tell an angel is happy when their wings flutter.wav
-010_perfect gem activated.wav
-011_you're quite proficient that clicking Diablo 3 might be right up your alley.wav
-012_everytime a bell rings a suit of armor manifests as the physical representation of an angel's wings.wav
-013_of course it hurt when I fell from heaven wait are you trying to hit on me.wav
-014_Justice isn't blind I don't have a face but I'm not blind.wav
-015_there is no wisdom in the High Heavens and no safety within Sanctuary what depressing State of Affairs.wav
-016_once I intervened on behalf of humanity saving your people from being erased from creation I'm beginning to regret that decision.wav
-017_blessings to you mortal.wav
-018_my eternal gratitude Euro.wav
-019_so it is done did I not warn you.wav
-020_Minecraft I've been fated retribution shall be mine.wav
-021_the plot of the Fallen demands Justice.wav
-022_you have ensured your dude.wav
-023_Justice dogs on this world.wav
-024_Batman suit of justice is unending.wav
-025_I have reformed.wav
-026_It's Not Unusual to see me fly.wav
-027_now these moves are divine.wav
-028_I must leave you.wav
-029_until we meet again.wav
-030_greetings.wav
-031_hey I beg your forgiveness my apologies.wav
-032_do you have my gratitude.wav
-033_thank you.wav
+001_Greetings, mortal..wav
+002_What do you need？.wav
+003_I'm sorry, did you say something？ I was busy thinking about Justice..wav
+004_Be warned, mortal. You never know what your curiosity might unleash..wav
+005_Fool! You have just ensured the doom of this world. You cannot even begin to imagine what you set in motion this day. Hahahaha, only kidding..wav
+006_Just because I'm an immortal doesn't mean I want to wait around forever..wav
+007_If I had a face I'd be glaring at you right now..wav
+008_In heaven, everything is fine..wav
+009_You can always tell an angel is happy when their wings flutter..wav
+010_Perfect gem activated..wav
+011_You're quite proficient at clicking. Diablo 3 might be right up your alley..wav
+012_Everytime a bell rings, a suit of armor manifests as the physical representation of an angel's wings..wav
+013_Of course it hurt when I fell from heaven. Wait, are you trying to hit on me？.wav
+014_Justice isn't blind. I don't have a face, but I'm not blind..wav
+015_There is no wisdom in the High Heavens and no safety within Sanctuary. Oh, what a depressing state of affairs..wav
+016_Once I intervened on behalf of humanity, saving your people from being erased from creation. I'm beginning to regret that decision..wav
+017_Blessings to you, mortal..wav
+018_My eternal gratitude, hero..wav
+019_So it is done. Did I not warn you？.wav
+020_My wrath has been sated. Retribution shall be mine..wav
+021_The plot of the Fallen demands Justice..wav
+022_Fool. You have ensured your doom..wav
+023_Justice dawns on this world..wav
+024_The pursuit of justice is unending..wav
+025_I have reformed..wav
+026_It's not unusual to see me fly..wav
+027_Now these moves are divine..wav
+028_I must leave you..wav
+029_Until we meet again..wav
+030_Greetings..wav
+031_Hail, I beg your forgiveness. My apologies..wav
+032_You have my gratitude..wav
+033_Thank you..wav
 034_well played a clever tactic.wav
 035_I agree.wav
 036_intriguing.wav
