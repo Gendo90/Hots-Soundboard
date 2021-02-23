@@ -1,7 +1,7 @@
 import React from "react";
 import TabNav from "./TabNav"
 import ButtonGroupsHolder from "./ButtonGroupsHolder"
-import "./buttonCSS.css";
+import "./styling.css";
 
 class App extends React.Component {
     constructor() {

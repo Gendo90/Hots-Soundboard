@@ -39,8 +39,8 @@ class ButtonGroup extends React.Component {
 
     render() {
         return (
-            <div>
-                <h3 className="text-center">{this.props.category}</h3>
+            <div class="buttonGroup">
+                <h4 className="text-center">{this.props.category}</h4>
                 <div className="btn-group d-md-flex flex-wrap">
                     {/* <button>Press me!</button> */}
                     {this.state.allButtonText.map(quote => {

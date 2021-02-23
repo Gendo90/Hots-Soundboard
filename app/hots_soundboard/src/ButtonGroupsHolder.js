@@ -46,8 +46,9 @@ class ButtonGroupsHolder extends React.Component {
 
     render() {
         return (
-            <div>
-                <h3 className="text-center">All Buttons</h3>
+            <div class="buttonGroupsHolder">
+                <h3 className="text-center">Tyrael</h3>
+                <hr></hr>
                 {Array.from(this.state.categoriesToFilenamesMap.keys()).map((category) => {
                     console.log(category)
                     if(this.state.categoriesToFilenamesMap.get(category).length !== 0) {
