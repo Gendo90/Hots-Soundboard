@@ -48,15 +48,16 @@ class ButtonGroupsHolder extends React.Component {
         return (
             <div>
                 <h3 className="text-center">All Buttons</h3>
-                {this.state.categoriesToFilenamesMap.keys().map((category) => {
-                    if(categoriesToFilenamesMap.get(category)) {
+                {Array.from(this.state.categoriesToFilenamesMap.keys()).map((category) => {
+                    console.log(category)
+                    if(this.state.categoriesToFilenamesMap.get(category).length !== 0) {
                         return (
-                            <ButtonGroup hero={this.props.hero} category={category} filenames={this.state.categoriesToFilenamesMap.get(category)}/>
+                            <ButtonGroup hero={this.props.hero} category={category} uncleanedFilenames={this.state.categoriesToFilenamesMap.get(category)}/>
                             )
                     }})
                 }
             </div>
-        )
+        )}
 }
 
 export default ButtonGroupsHolder;
