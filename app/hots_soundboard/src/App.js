@@ -1,6 +1,6 @@
 import React from "react";
 import TabNav from "./TabNav"
-import ButtonGroup from "./ButtonGroup"
+import ButtonGroupsHolder from "./ButtonGroupsHolder"
 import "./buttonCSS.css";
 
 class App extends React.Component {
@@ -21,7 +21,7 @@ class App extends React.Component {
                 </div>
                 <div className="row">
                     <div className="col">
-                        <ButtonGroup hero={this.state.hero}/>
+                        <ButtonGroupsHolder hero={this.state.hero}/>
                     </div>
                 </div>                
             </div>
