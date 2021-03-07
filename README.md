@@ -33,4 +33,4 @@ Some of the planned features that will improve the functionality and experience 
 
 ## Technologies
 
-This application uses the React (v17) frontend framework, a Jupyter Notebook to "clean" the source quote files from YouTube in conjunction with the pydub and speech_recognition Python libraries and the Google Speech Recognition API to split and transcribe each hero's quotes.
+This application uses the [React](https://reactjs.org/) (v17) frontend framework, a Jupyter Notebook to "clean" the source quote files from YouTube in conjunction with the [pydub](https://github.com/jiaaro/pydub) and [speech_recognition](https://pypi.org/project/SpeechRecognition/) Python libraries and the [Google Speech Recognition API](https://cloud.google.com/speech-to-text) to split and transcribe each hero's quotes.
