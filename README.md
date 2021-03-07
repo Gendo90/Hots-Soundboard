@@ -13,7 +13,7 @@ The app itself is a soundboard that will feature a few different Heroes of the S
 
 The sound files were sourced from quote compilation videos provided on Youtube by the user [Danserkk](https://www.youtube.com/channel/UCOjo_LxIJ0aKSwt4pOttPvA). These were broken into individual quotes from the selected characters, and then loaded into the app for playback!
 
-The app itself is available online [here](https://hots-soundboard-8wbyfi7xp-patrickgendotti.vercel.app/) - enjoy!
+The app itself is available online [here](https://hots-soundboard.vercel.app) - enjoy!
 
 ## Usage
 
