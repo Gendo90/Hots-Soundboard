@@ -34,6 +34,7 @@ class ButtonGroupsHolder extends React.Component {
             if(category) {
                 categoryToFilenameMapModifier.get(category).push(filename)
             }
+            return null;
         })
 
         //now set the matching state variable once right here
@@ -55,7 +56,10 @@ class ButtonGroupsHolder extends React.Component {
                         return (
                             <ButtonGroup hero={this.props.hero} category={category} uncleanedFilenames={this.state.categoriesToFilenamesMap.get(category)}/>
                             )
-                    }})
+                    }
+                    return "";
+                }
+                    )
                 }
             </div>
         )}

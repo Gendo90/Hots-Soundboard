@@ -1,5 +1,5 @@
 import React from "react";
-import {Howl, Howler} from "howler";
+import {Howl} from "howler";
 
 
 class SoundButton extends React.Component {
