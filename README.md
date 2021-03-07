@@ -32,3 +32,5 @@ Some of the planned features that will improve the functionality and experience 
 - Additional heroes (currently thinking of Kerrigan, Greymane, Arthas, and [D.Va](#))
 
 ## Technologies
+
+This application uses the React (v17) frontend framework, a Jupyter Notebook to "clean" the source quote files from YouTube in conjunction with the pydub and speech_recognition Python libraries and the Google Speech Recognition API to split and transcribe each hero's quotes.
