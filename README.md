@@ -1,9 +1,10 @@
 # Heroes of the Storm Soundboard
 
 ## Table of Contents
-- Introduction
-- Usage
-- Technologies
+- [Introduction](#introduction)
+- [Usage](#usage)
+- [Planned Features](#planned-features)
+- [Technologies](#technologies)
 
 ## Introduction
 This application was developed as an educational, exhibition project to showcase my React and data science skills in a fully-functional, interactive project.  This is my first production React app, planned and developed on my own, because all the other React apps I have built so far have been guided by requirements or walkthroughs in online courses.
@@ -24,6 +25,10 @@ The initial hero loaded into the application is Tyrael, who was the first charac
 
 ## Planned Features
 
-
+Some of the planned features that will improve the functionality and experience with this app are listed as follows:
+- "Stop" playback button
+- Improved loading of each sound clip (currently lazy-loaded, should be loaded in parallel all quotes for each hero only ~10 mb)
+- Prevent overlap in playback when multiple buttons are pressed (interrupt previous quote and start new quote, ending previous quote playback)
+- Additional heroes (currently thinking of Kerrigan, Greymane, Arthas, and [D.Va](#))
 
 ## Technologies
