@@ -1,5 +1,5 @@
 import React from "react";
-import {Howl} from "howler";
+import {Howl, Howler} from "howler";
 
 
 class SoundButton extends React.Component {
@@ -12,6 +12,8 @@ class SoundButton extends React.Component {
     }
 
     onButtonClick = (e) => {
+        //stops all sounds from playing to prevent overlap - only one quote playable at a time
+        Howler.stop();
         if(!this.state.sound) {
             this.setState({
                 sound: new Howl({
