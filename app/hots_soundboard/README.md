@@ -12,6 +12,18 @@ The app itself is a soundboard that will feature a few different Heroes of the S
 
 The sound files were sourced from quote compilation videos provided on Youtube by the user [Danserkk](https://www.youtube.com/channel/UCOjo_LxIJ0aKSwt4pOttPvA). These were broken into individual quotes from the selected characters, and then loaded into the app for playback!
 
+The app itself is available online [here](https://hots-soundboard-8wbyfi7xp-patrickgendotti.vercel.app/) - enjoy!
+
 ## Usage
+
+Using the app is fairly straightforward - simply click on the hero name tab you wish to view the soundboard for, and then navigate down the page to view the hero's available quotes, grouped by overall categories. 
+
+Any of these quotes may be clicked to play the resulting sound clip, voiced by the hero themself! Sound clips can overlap in the current version of the app, so please wait for one sound bite to end before starting another, or else your hero will start saying the new sound clip before the other has ended.
+
+The initial hero loaded into the application is Tyrael, who was the first character added!
+
+## Planned Features
+
+
 
 ## Technologies
