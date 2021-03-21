@@ -19,16 +19,14 @@ The app itself is available online [here](https://hots-soundboard.vercel.app) - 
 
 Using the app is fairly straightforward - simply click on the hero name tab you wish to view the soundboard for, and then navigate down the page to view the hero's available quotes, grouped by overall categories. 
 
-Any of these quotes may be clicked to play the resulting sound clip, voiced by the hero themself! Sound clips can overlap in the current version of the app, so please wait for one sound bite to end before starting another, or else your hero will start saying the new sound clip before the other has ended.
+Any of these quotes may be clicked to play the resulting sound clip, voiced by the hero themself! You can click another quote while the first is playing to interrupt the first quote and start playback for the new quote. You can also press the Spacebar during any quote playback to stop the sound clip instantly.
 
 The initial hero loaded into the application is Tyrael, who was the first character added!
 
 ## Planned Features
 
 Some of the planned features that will improve the functionality and experience with this app are listed as follows:
-- "Stop" playback button
 - Improved loading of each sound clip (currently lazy-loaded, should be loaded in parallel all quotes for each hero only ~10 mb)
-- Prevent overlap in playback when multiple buttons are pressed (interrupt previous quote and start new quote, ending previous quote playback)
 - Additional heroes (currently thinking of Kerrigan, Greymane, Arthas, and [D.Va](#))
 
 ## Technologies
