@@ -5,7 +5,15 @@ class ButtonGroupsHolder extends React.Component {
     //state contains two maps of filenumbers to the category names, from ${hero}_categories.json,
     //then the categories to lists of filenames from ${hero}_Clips.txt
     //so that the ${hero}_Clips.txt file only needs to be read once
-    state = {fileNumToCategoryMap: new Map(), categoriesToFilenamesMap: new Map()}
+    constructor(props) {
+        super(props);
+
+        // Note that cannot set state to Howl here because of the new AudioContext rules
+        // that only allow sound upon user interaction
+        this.state = { hero: this.props.hero };
+        this.state.fileNumToCategoryMap = new Map();
+        this.state.categoriesToFilenamesMap = new Map()
+    }
 
     async setupStateUponLoading(hero) {
         let categoriesToFileNums = await fetch(`./sounds/${hero}/${hero}_categories.json`).then((res) => res.json());
@@ -14,7 +22,8 @@ class ButtonGroupsHolder extends React.Component {
         //now map filenumbers to each category
         let numsToCategoryMap = new Map();
         Object.keys(categoriesToFileNums).map((category) => categoriesToFileNums[category].map(fileNum => numsToCategoryMap.set(fileNum, category)));
-        this.setState({ fileNumToCategoryMap: numsToCategoryMap })
+        // this.setState({ fileNumToCategoryMap: numsToCategoryMap })
+        this.setState({fileNumToCategoryMap: numsToCategoryMap})
         // console.log(this.state.fileNumToCategoryMap)
 
         //now iterate over filenames from ${hero}_Clips.txt file
@@ -38,23 +47,32 @@ class ButtonGroupsHolder extends React.Component {
         })
 
         //now set the matching state variable once right here
-        this.setState({ categoriesToFilenamesMap: categoryToFilenameMapModifier})
+        this.setState({categoriesToFilenamesMap: categoryToFilenameMapModifier})
     }
 
     async componentDidMount() {
-        this.setupStateUponLoading(this.props.hero)
+        await this.setupStateUponLoading(this.state.hero)
+        // this.render()
+    }
+
+    async componentDidUpdate(prevProps, prevState) {
+        if(this.props.hero !== prevState.hero) {
+            await this.setupStateUponLoading(this.props.hero);
+            await this.setState({ hero: this.props.hero });
+        }
     }
 
     render() {
+        // this.setupStateUponLoading(this.state.hero);
         return (
             <div class="buttonGroupsHolder">
-                <h3 className="text-center">Tyrael</h3>
+                <h3 className="text-center">{this.state.hero}</h3>
                 <hr></hr>
                 {Array.from(this.state.categoriesToFilenamesMap.keys()).map((category) => {
                     console.log(category)
                     if(this.state.categoriesToFilenamesMap.get(category).length !== 0) {
                         return (
-                            <ButtonGroup hero={this.props.hero} category={category} uncleanedFilenames={this.state.categoriesToFilenamesMap.get(category)}/>
+                            <ButtonGroup hero={this.state.hero} category={category} uncleanedFilenames={this.state.categoriesToFilenamesMap.get(category)}/>
                             )
                     }
                     return "";

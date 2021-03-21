@@ -2,13 +2,21 @@ import React from "react";
 import SoundButton from "./SoundButton";
 
 class ButtonGroup extends React.Component {
-    state = {allButtonText: [""], filenames: new Map()}
+    constructor(props) {
+        super(props);
+
+        // Note that cannot set state to Howl here because of the new AudioContext rules
+        // that only allow sound upon user interaction
+        this.state = { hero: this.props.hero };
+        this.state.allButtonText = [""];
+        this.state.filenames = new Map();
+    }
 
     getAllButtonText() {
         //clean filenames using a helper function, outputs all quotes
         let allQuotes = this.cleanFilenames(this.props.uncleanedFilenames)
         //set allButtonText to match all quotes from previous helper function
-        this.setState({ allButtonText: allQuotes});
+        this.setState({allButtonText: allQuotes});
     }
 
     //takes an array of raw filenames (from parent), and converts them to cleaned 
@@ -27,7 +35,7 @@ class ButtonGroup extends React.Component {
             return cleaned_quote;
         })
         // set the new state for the filenames property
-        this.setState({ filenames: newQuoteMap })
+        this.setState({filenames: newQuoteMap});
 
         //list of cleaned filenames (i.e. quote text)
         return output
@@ -35,6 +43,12 @@ class ButtonGroup extends React.Component {
 
     componentDidMount() {
         this.getAllButtonText();
+    }
+
+    async componentDidUpdate(prevProps, prevState) {
+        if(this.props.hero !== prevState.hero) {
+            await this.setState({ hero: this.props.hero }, this.getAllButtonText)
+        }
     }
 
     render() {
@@ -45,7 +59,7 @@ class ButtonGroup extends React.Component {
                     {/* <button>Press me!</button> */}
                     {this.state.allButtonText.map(quote => {
                         return(
-                            <SoundButton text={quote} hero={this.props.hero} filename={this.state.filenames.get(quote)} />
+                            <SoundButton text={quote} hero={this.state.hero} filename={this.state.filenames.get(quote)} />
                         )
                     })}
                 </div>

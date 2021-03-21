@@ -11,7 +11,7 @@ class TabNav extends React.Component {
             { this.props.allTabs.map((hero) => {
                 return (
                 <li className="nav-item">
-                        <a className={"nav-link " + (hero === this.props.hero ? "active" : "")} aria-current="page" href="/">{hero}</a>
+                        <a className={"nav-link " + (hero === this.props.hero ? "active" : "")} onClick={this.props.setHero} aria-current="page" href="#">{hero}</a>
                 </li>
                 )
             })}

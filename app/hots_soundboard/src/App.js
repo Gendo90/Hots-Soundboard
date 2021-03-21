@@ -8,7 +8,14 @@ class App extends React.Component {
     constructor() {
         super();
 
-        this.state = { hero: "Tyrael", all_heros: ["Tyrael"] }//, context: new AudioContext()}
+        this.state = { hero: "Tyrael", all_heros: ["Tyrael", "Kerrigan"] }//, context: new AudioContext()}
+    }
+
+    //change hero upon clicking a tab
+    updateHero = async (e) => {
+        console.log(e.target.textContent)
+        console.log(this.state.hero)
+        await this.setState({ hero: e.target.textContent }, () => console.log(this.state.hero));
     }
 
     //add a "stop" hotkey button (spacebar) to stop playback of quote instantly
@@ -26,7 +33,7 @@ class App extends React.Component {
                 <h2 className="text-center">Heroes of the Storm Soundboard</h2>
                 <div className="row">
                     <div className="col">
-                        <TabNav hero={this.state.hero} allTabs={this.state.all_heros}></TabNav>
+                        <TabNav hero={this.state.hero} allTabs={this.state.all_heros} setHero={this.updateHero}></TabNav>
                     </div>
                 </div>
                 <div className="row">
